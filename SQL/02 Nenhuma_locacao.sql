@@ -1,0 +1,10 @@
+https://www.beecrowd.com.br/judge/pt/problems/view/2616
+
+
+Resposta:
+
+SELECT id, name
+FROM customers
+WHERE id NOT IN (SELECT id_customers FROM locations)
+ORDER BY id;
+
